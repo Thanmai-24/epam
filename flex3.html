@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row; /* Can be changed to column */
+            justify-content: space-around; /* Space between items */
+            align-items: center; /* Align items vertically */
+            width: 80%;
+            height: 200px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .item {
+            background-color: #007BFF;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px;
+            flex: 1; /* Items take equal space */
+            margin: 0 10px; /* Space between items */
+        }
+
+        .item:nth-child(2) {
+            background-color: #28A745;
+        }
+
+        .item:nth-child(3) {
+            background-color: #FFC107;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Front</div>
+        <div class="item">End</div>
+        <div class="item">Development</div>
+    </div>
+</body>
+</html>
